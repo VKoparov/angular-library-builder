@@ -11,11 +11,11 @@
   "author": {
     "name": "Valentin Koparov",
     "email": "valentinkoparov@gmail.com",
-    "url": ""
+    "url": "https://www.npmjs.com/package/ngx-socksjs"
   },
   "repository": {
     "type": "git",
-    "url": "https://www.npmjs.com/package/ngx-socksjs"
+    "url": "https://github.com/VKoparov/angular-library-builder/tree/main/projects/ngx-socksjs"
   },
   "peerDependencies": {
     "@angular/common": "^13.0.1",
