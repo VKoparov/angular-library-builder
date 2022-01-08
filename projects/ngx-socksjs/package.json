@@ -1,0 +1,26 @@
+{
+  "name": "ngx-socksjs",
+  "version": "0.0.1",
+  "description": "Easy to use, plug and play type of Stomp Websocket for Angular based on (ng2-stompjs).",
+  "keywords": [
+    "stomp",
+    "angular",
+    "sockjs",
+    "websocket"
+  ],
+  "author": {
+    "name": "Valentin Koparov",
+    "email": "valentinkoparov@gmail.com",
+    "url": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://www.npmjs.com/package/ngx-socksjs"
+  },
+  "peerDependencies": {
+    "@angular/common": "^13.0.1",
+    "@angular/core": "^13.0.1",
+    "rxjs": "~7.4.0",
+    "@stomp/ng2-stompjs": "^8.0.0"
+  }
+}

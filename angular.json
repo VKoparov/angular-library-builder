@@ -1,0 +1,42 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "cli": {
+    "analytics": false
+  },
+  "version": 1,
+  "newProjectRoot": "projects",
+  "projects": {
+    "ngx-socksjs": {
+      "projectType": "library",
+      "root": "projects/ngx-socksjs",
+      "sourceRoot": "projects/ngx-socksjs/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/ngx-socksjs/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/ngx-socksjs/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/ngx-socksjs/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ngx-socksjs/src/test.ts",
+            "tsConfig": "projects/ngx-socksjs/tsconfig.spec.json",
+            "karmaConfig": "projects/ngx-socksjs/karma.conf.js"
+          }
+        }
+      }
+    }
+  },
+  "defaultProject": "ngx-socksjs"
+}
